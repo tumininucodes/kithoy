@@ -1,3 +1,3 @@
 # kithoy
 
-Repo used to practise some flutter UIs
+Flutter UI practice
