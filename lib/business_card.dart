@@ -11,9 +11,6 @@ class BusinessCard extends StatelessWidget {
     return MaterialApp(
       title: 'Business Card',
       home: Scaffold(
-          appBar: AppBar(
-            title: Text('Business Card'),
-          ),
           body: Container(
               child: Center(
                   child: Column(
