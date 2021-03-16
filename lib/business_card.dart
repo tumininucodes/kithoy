@@ -46,3 +46,23 @@ class AppDeveloper extends StatelessWidget {
     );
   }
 }
+
+class AccountCircle extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.symmetric(),
+      child: Image.asset(''),
+    );
+  }
+}
+
+class AddressText extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.symmetric(),
+      child: Text('123 Main Street', textScaleFactor: 1.5,),
+    );
+  }
+}
