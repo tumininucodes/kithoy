@@ -18,7 +18,9 @@ class BusinessCard extends StatelessWidget {
               child: Center(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [FlutterMcFlutter(), AppDeveloper()],
+                    children: [
+                      FirstRow()
+                    ],
                   )
               )
           )
@@ -52,7 +54,34 @@ class AccountCircle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.symmetric(),
-      child: Image.asset(''),
+      child: Icon(Icons.account_circle, size: 70.0,),
+    );
+  }
+}
+
+class MainText extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        FlutterMcFlutter(),
+        AppDeveloper()
+      ],
+    );
+  }
+}
+
+class FirstRow extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        AccountCircle(),
+        SizedBox(width: 10.0,),
+        MainText()
+      ],
     );
   }
 }
@@ -63,6 +92,31 @@ class AddressText extends StatelessWidget {
     return Container(
       padding: EdgeInsets.symmetric(),
       child: Text('123 Main Street', textScaleFactor: 1.5,),
+    );
+  }
+}
+
+class PhoneText extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.symmetric(),
+      child: Text('(415) 555-0198', textScaleFactor: 1.5,),
+    );
+  }
+}
+
+class IconsRow extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: [
+        Icon(Icons.accessibility),
+        Icon(Icons.timer),
+        Icon(Icons.phone_android),
+        Icon(Icons.phone_iphone),
+      ],
     );
   }
 }
