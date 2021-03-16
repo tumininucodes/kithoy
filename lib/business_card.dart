@@ -16,12 +16,43 @@ class BusinessCard extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      FirstRow()
+                      FirstRow(),
+                      SecondRow(),
+                      SizedBox(height: 10.0,),
+                      ThirdRow()
                     ],
                   )
               )
           )
       ),
+    );
+  }
+}
+
+class FirstRow extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        SizedBox(width: 45.0,),
+        AccountCircle(),
+        SizedBox(width: 10.0,),
+        MainText()
+      ],
+    );
+  }
+}
+
+class SecondRow extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        AddressText(),
+        SizedBox(width: 20.0,),
+        PhoneText()
+      ],
     );
   }
 }
@@ -69,20 +100,6 @@ class MainText extends StatelessWidget {
   }
 }
 
-class FirstRow extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        AccountCircle(),
-        SizedBox(width: 10.0,),
-        MainText()
-      ],
-    );
-  }
-}
-
 class AddressText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -103,7 +120,7 @@ class PhoneText extends StatelessWidget {
   }
 }
 
-class IconsRow extends StatelessWidget {
+class ThirdRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
