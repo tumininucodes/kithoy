@@ -7,7 +7,10 @@ void main() {
 class MyLoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-
+    return MaterialApp(
+      title: 'Shrine',
+      home: LoginPage(),
+    );
 
   }
 }
