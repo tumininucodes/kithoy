@@ -32,7 +32,7 @@ class FlutterMcFlutter extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.symmetric(),
-      child: Text('Flutter McFlutter'),
+      child: Text('Flutter McFlutter', textScaleFactor: 2,),
     );
   }
 }
@@ -42,7 +42,7 @@ class AppDeveloper extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.symmetric(),
-      child: Text('App Developer'),
+      child: Text('App Developer', textScaleFactor: 1.5,),
     );
   }
 }
