@@ -8,15 +8,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Welcome to Fluter',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Startup Name Generator'),
-        ),
-        body: Center(
-          child: RandomWords(),
-        ),
-      ),
+        title: 'Startup Name Generator',
+        home: RandomWords()
     );
   }
 }
