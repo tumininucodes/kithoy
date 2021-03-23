@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:kithoy/login_page/animation/fade_animation.dart';
 
 void main() =>
     runApp(
@@ -156,7 +157,7 @@ class WidgetStack extends StatelessWidget {
                       borderRadius: BorderRadius.circular(10),
                       gradient: LinearGradient(
                           colors: [
-                            Color.fromRGBO(143, 148, 251, 1)
+                            Color.fromRGBO(143, 148, 251, 1),
                             Color.fromRGBO(143, 148, 251, 6),
                           ]
                       )
