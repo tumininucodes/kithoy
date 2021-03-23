@@ -48,6 +48,10 @@ flutter:
 
   assets:
     - assets/diamond.png
+    - assets/background.png
+    - assets/clock.png
+    - assets/light-1.png
+    - assets/light-2.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:
